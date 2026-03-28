@@ -66,3 +66,11 @@ function blowCandles() {
 document.addEventListener("DOMContentLoaded", () => {
     nextSlide(1);
 });
+
+function showCreditsModal() {
+    document.getElementById('creditsModal').classList.add('active');
+}
+
+function closeCreditsModal() {
+    document.getElementById('creditsModal').classList.remove('active');
+}
