@@ -100,7 +100,7 @@
                         <button onclick="pressKey(0)">0</button>
                         <button disabled>#</button>
                     </div>
-                    <p class="hint pb-hint">hint- its your special day</p>
+                    <p class="hint pb-hint">hint- its are fav code</p>
                 </div>
             </div>
         </div>
@@ -406,7 +406,7 @@
                 <div class="letter-scene">
                     <div class="speech-bubble sb1">Love you</div>
                     <div class="speech-bubble sb2">♡♡♡♡</div>
-                    <div class="fake-stamp">🌸</div>
+                    <div class="fake-stamp" onclick="showCreditsModal()">🌸</div>
 
                     <div class="envelope-wrap">
                         <div class="envelope-back"></div>
@@ -420,7 +420,7 @@
                     </div>
 
                     <div class="photobooth-strip">
-                        <img src="pic4.jpeg" alt="Film 1">
+                        <img src="pic1.jpeg" alt="Film 1">
                         <img src="pic7.jpeg" alt="Film 2">
                         <img src="pic3.jpeg" alt="Film 3">
                         <div class="pb-text">LOVE ♥</div>
@@ -428,6 +428,18 @@
                 </div>
                 <button class="btn btn-black btn-ab-br" onclick="nextSlide(1)">BACK</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Credits Modal -->
+    <div id="creditsModal" class="modal-overlay" onclick="closeCreditsModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img src="pic8.jpeg" alt="Credits Photo">
+            <div class="credits-text">
+                <p>photo credits : smirk</p>
+                <p>dev credits : aj</p>
+            </div>
+            <button class="btn btn-black btn-close" onclick="closeCreditsModal()">X</button>
         </div>
     </div>
 
